@@ -16,9 +16,9 @@
 
             // Toolbar
             'app.toolbar',
-            //
-            //// Quick panel
-            //'app.quick-panel',
+
+            // Quick panel
+            'app.quick-panel',
 
             // Sample
             'app.sample'

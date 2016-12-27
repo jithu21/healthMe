@@ -32,7 +32,7 @@
       'app.user',
       'app.rules',
       'app.objects',
-      'app.pages'
+      'app.profile'
 
     ]);
 })();

@@ -45,7 +45,7 @@
 
         <div class="info-line">
           <div class="title" translate="PROFILE.SKILLS">Skills</div>
-          <div class="info">{{vm.about.work.skills}}</div>
+          <input class="info" ng-model="vm.about.work.skills" type="text" placeholder="Phone Number">
         </div>
 
         <div class="info-line">
@@ -77,9 +77,8 @@
         </div>
         <div class="info-line">
           <div class="title" translate="PROFILE.WEBSITE">Website</div>
-          <div class="info" ng-repeat="website in vm.about.contact.websites">
-            <span>{{website}}</span>
-          </div>
+          <input class="info" ng-model="vm.about.contact.website"  type="text" placeholder="Website Name">
+
         </div>
         <div class="info-line">
           <div class="title" translate="PROFILE.EMAILS">Emails</div>

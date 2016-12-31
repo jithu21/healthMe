@@ -23,16 +23,29 @@
 
             <form name="registerForm" novalidate>
                 <md-input-container class="md-block" md-no-float>
-                    <input name="username" ng-model="vm.form.username" placeholder="Name"
-                           translate translate-attr-placeholder="REGISTER_V2.NAME"
+                    <input name="firstname" ng-model="vm.form.firstname" placeholder="First Name"
+                           translate translate-attr-placeholder="REGISTER_V2.FIRSTNAME"
                            required>
-                    <div ng-messages="registerForm.username.$error" ng-show="registerForm.username.$touched"
+                    <div ng-messages="registerForm.firstname.$error" ng-show="registerForm.firstname.$touched"
                          role="alert">
                         <div ng-message="required">
-                            <span translate="REGISTER_V2.ERRORS.USERNAME_REQUIRED">Username field is required</span>
+                            <span translate="REGISTER_V2.ERRORS.FIRSTNAME_REQUIRED">First Name field is required</span>
                         </div>
                     </div>
                 </md-input-container>
+
+              <md-input-container class="md-block" md-no-float>
+                <input name="lastname" ng-model="vm.form.lastname" placeholder="Last Name"
+                       translate translate-attr-placeholder="REGISTER_V2.LASTNAME"
+                       required>
+                <div ng-messages="registerForm.lastname.$error" ng-show="registerForm.lastname.$touched"
+                     role="alert">
+                  <div ng-message="required">
+                    <span translate="REGISTER_V2.ERRORS.LASTNAME_REQUIRED">Last Name field is required</span>
+                  </div>
+                </div>
+              </md-input-container>
+
 
                 <md-input-container class="md-block" md-no-float>
                     <input type="email" name="email" ng-model="vm.form.email" placeholder="Email"

@@ -32,15 +32,9 @@
 
         // Navigation
         msNavigationServiceProvider.saveItem('fuse', {
-            title : 'OPINIO',
+            title : 'ANALYTICS',
             group : true,
             weight: 1
-        });
-        msNavigationServiceProvider.saveItem('fuse.forms', {
-          title      : 'Customers',
-          icon       : 'icon-amazon-clouddrive',
-          state      : 'app.s3',
-          weight     : 2
         });
     }
 })();

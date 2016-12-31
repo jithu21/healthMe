@@ -15,7 +15,7 @@
     {
         // Navigation
         msNavigationServiceProvider.saveItem('apps', {
-            title : 'OPINIO DASHBAORD',
+            title : 'HEALTH DASHBAORD',
             group : true,
             weight: 1
         });

@@ -31,8 +31,7 @@
       'underscore',
       'app.user',
       'app.rules',
-      'app.objects',
-      'app.profile'
-
+      'app.profile',
+      'app.reports'
     ]);
 })();

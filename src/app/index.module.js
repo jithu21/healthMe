@@ -32,6 +32,7 @@
       'app.user',
       'app.rules',
       'app.profile',
-      'app.reports'
+      'app.reports',
+      'lfNgMdFileInput'
     ]);
 })();

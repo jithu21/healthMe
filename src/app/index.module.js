@@ -29,7 +29,7 @@
       'scDateTime',
       'app.sourceDetail',
       'underscore',
-      'app.user',
+      'app.prescription',
       'app.rules',
       'app.profile',
       'app.reports',

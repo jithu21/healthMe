@@ -1,0 +1,45 @@
+<div id="simple-table" class="page-layout simple fullwidth doc-page element-doc-page">
+
+     <div class="content">
+
+      <div class="white-bg md-whiteframe-4dp">
+        <table class="dataTable row-border hover" datatable="ng" dt-options="vm.dtOptions">
+          <thead>
+          <tr>
+            <th class="secondary-text">
+              <div class="table-header">
+                <span class="column-title">Hospital Name</span>
+              </div>
+            </th>
+            <th class="secondary-text">
+              <div class="table-header">
+                <span class="column-title">Doctor Name</span>
+              </div>
+            </th>
+            <th class="secondary-text">
+              <div class="table-header">
+                <span class="column-title">Sickness</span>
+              </div>
+            </th>
+            <th class="secondary-text">
+              <div class="table-header">
+                <span class="column-title">Date of Visit</span>
+              </div>
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr ng-repeat="prescription in ::vm.prescriptions">
+            <td>{{ prescription.hospitalName }}</td>
+            <td>{{ prescription.doctorName }}</td>
+            <td>{{ prescription.sicknessReason }}</td>
+            <td>{{ prescription.visitDate }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <!-- / CONTENT -->
+
+</div>

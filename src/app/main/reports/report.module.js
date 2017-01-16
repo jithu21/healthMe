@@ -3,7 +3,8 @@
     'use strict';
 
     angular
-        .module('app.reports', [])
+        .module('app.reports', [
+        ])
         .config(config);
 
     /** @ngInject */
@@ -71,10 +72,10 @@
             title: 'CBC',
             state: 'app.report_cbc'
         });
-      msNavigationServiceProvider.saveItem('reports.lipid', {
-        title: 'Lipid',
-        state: 'app.report_lipid'
-      });
+         msNavigationServiceProvider.saveItem('reports.lipid', {
+          title: 'Lipid',
+          state: 'app.report_lipid'
+        });
     }
 
 })();

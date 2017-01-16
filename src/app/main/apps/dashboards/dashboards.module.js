@@ -15,7 +15,7 @@
     {
         // Navigation
         msNavigationServiceProvider.saveItem('apps', {
-            title : 'HEALTH DASHBAORD',
+            title : 'HEALTH DASHBOARD',
             group : true,
             weight: 1
         });
@@ -26,20 +26,12 @@
             weight: 1
         });
 
-        //msNavigationServiceProvider.saveItem('apps.dashboards.project', {
-        //    title: 'Project',
-        //    state: 'app.dashboards_project'
-        //});
 
         msNavigationServiceProvider.saveItem('apps.dashboards.server', {
-            title: 'Customer Insights',
+            title: 'Health Insights',
             state: 'app.dashboards_server'
         });
 
-        //msNavigationServiceProvider.saveItem('apps.dashboards.analytics', {
-        //    title: 'Analytics',
-        //    state: 'app.dashboards_analytics'
-        //});
     }
 
 })();

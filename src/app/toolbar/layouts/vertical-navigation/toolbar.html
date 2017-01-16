@@ -1,10 +1,11 @@
 <div layout="row" layout-align="space-between center">
 
   <div layout="row" layout-align="start center">
-    <div class="logo" layout="row" layout-align="start center">
-      <span class="logo-image"></span>
-    </div>
-
+    <md-button id="navigation-toggle" class="md-icon-button" ng-click="vm.toggleSidenav('navigation')"
+               hide-gt-sm aria-label="Toggle navigation" translate
+               translate-attr-aria-label="TOOLBAR.TOGGLE_NAVIGATION">
+      <md-icon md-font-icon="icon-menu" class="icon"></md-icon>
+    </md-button>
     <md-progress-circular id="toolbar-progress" ng-if="$root.loadingProgress" class="md-accent"
                           md-mode="indeterminate" md-diameter="64">
     </md-progress-circular>

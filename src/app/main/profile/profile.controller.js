@@ -14,9 +14,9 @@
       vm.about ={
         general :{
           "gender":"Male",
-          "birthday":"21st September,1992",
+          "birthday":new Date().toISOString().substring(0, 10),
           "locations":["Bangalore"],
-          "about":"Born in Vijayawada, work in Bangalore"
+          "about":"Born in Vijayawada"
         },
         work :{
           "occupation":"Software Engineer",
@@ -25,7 +25,8 @@
         },
         contact:{
           "address":"BTM 1st stage,Banaglore",
-          "tel":["+91 9066651549"]
+          "tel":"+91 9066651549",
+          "email":"guptaa.pavan@gmail.com"
         }
       }
       // Methods

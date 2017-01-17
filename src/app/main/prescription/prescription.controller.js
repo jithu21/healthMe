@@ -24,6 +24,13 @@
           "doctorName":"Prasath", "visitDate":"21/05/2016", "sicknessReason":""},
         {"hospitalName":"King Jorge",
           "doctorName":"Vijay", "visitDate":"21/06/2016", "sicknessReason":""}
+      ];
+
+      vm.states =[
+        "Karnataka",
+        "Andhra Pradesh",
+        "Telangana",
+        "Gujarat"
       ]
 
 

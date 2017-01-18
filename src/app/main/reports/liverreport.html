@@ -119,42 +119,42 @@
                     <tbody>
                    <tr>
                      <td>Total Bilirubin</td>
-                     <td> <md-slider-container> <span>Result</span>      <md-slider flex min="0.1" step="0.1" max="1.2" ng-model="vm.formWizard.totalbilirubin" aria-label="totalbilirubin" id="totalbilirubin" md-discrete></md-slider></md-slider-container>
+                     <td> <md-slider-container> <span>{{ vm.formWizard.totalbilirubin }}</span>      <md-slider flex min="0.1" step="0.1" max="1.2" ng-model="vm.formWizard.totalbilirubin" aria-label="totalbilirubin" id="totalbilirubin" md-discrete></md-slider></md-slider-container>
                      </td>
                      <td>(mg/dl)</td>
                      <td>(0.1 - 1.2)</td>
                    </tr>
                    <tr>
                      <td>Direct Bilirubin</td>
-                     <td> <md-slider-container> <span>Result</span>      <md-slider flex min="0.0" step="0.01" max="0.40" ng-model="vm.formWizard.directbilirubin" aria-label="directbilirubin" id="directbilirubin" md-discrete></md-slider></md-slider-container>
+                     <td> <md-slider-container> <span>{{ vm.formWizard.directbilirubin }}</span>      <md-slider flex min="0.0" step="0.01" max="0.40" ng-model="vm.formWizard.directbilirubin" aria-label="directbilirubin" id="directbilirubin" md-discrete></md-slider></md-slider-container>
                      </td>
                      <td>(mg/dl)</td>
                      <td>(0.0 - 0.40)</td>
                    </tr>
                    <tr>
                      <td>Indirect Bilirubin</td>
-                     <td> <md-slider-container> <span>Result</span>      <md-slider flex min="0.1" step="0.1" max="1.1" ng-model="vm.formWizard.indirectbilirubin" aria-label="indirectbilirubin" id="indirectbilirubin" md-discrete></md-slider></md-slider-container>
+                     <td> <md-slider-container> <span>{{ vm.formWizard.indirectbilirubin }}</span>      <md-slider flex min="0.1" step="0.1" max="1.1" ng-model="vm.formWizard.indirectbilirubin" aria-label="indirectbilirubin" id="indirectbilirubin" md-discrete></md-slider></md-slider-container>
                      </td>
                      <td>(mg/dl)</td>
                      <td>(0.0 - 1.1)</td>
                    </tr>
                    <tr>
                      <td>SGPT</td>
-                     <td> <md-slider-container> <span>Result</span>      <md-slider flex min="10" step="5" max="50" ng-model="vm.formWizard.sgpt" aria-label="red" id="sgpt" md-discrete></md-slider></md-slider-container>
+                     <td> <md-slider-container> <span>{{ vm.formWizard.sgpt }}</span>      <md-slider flex min="10" step="5" max="50" ng-model="vm.formWizard.sgpt" aria-label="red" id="sgpt" md-discrete></md-slider></md-slider-container>
                      </td>
                      <td>(IU/ml)</td>
                      <td>(10 - 50)</td>
                    </tr>
                    <tr>
                      <td>SGOT</td>
-                     <td> <md-slider-container> <span>Result</span>      <md-slider flex min="5" step="1" max="37" ng-model="vm.formWizard.sgot" aria-label="sgot" id="sgot" md-discrete></md-slider></md-slider-container>
+                     <td> <md-slider-container> <span>{{ vm.formWizard.sgot }}</span>      <md-slider flex min="5" step="1" max="37" ng-model="vm.formWizard.sgot" aria-label="sgot" id="sgot" md-discrete></md-slider></md-slider-container>
                      </td>
                      <td>(IU/ml)</td>
                      <td>(5 - 37)</td>
                    </tr>
                    <tr>
                      <td>ALP</td>
-                     <td> <md-slider-container> <span>Result</span>      <md-slider flex min="45" step="5" max="135" ng-model="vm.formWizard.alp" aria-label="alp" id="alp" md-discrete></md-slider></md-slider-container>
+                     <td> <md-slider-container> <span>{{ vm.formWizard.alp }}</span>      <md-slider flex min="45" step="5" max="135" ng-model="vm.formWizard.alp" aria-label="alp" id="alp" md-discrete></md-slider></md-slider-container>
                      </td>
                      <td>(U/L)</td>
                      <td>(45 - 135)</td>
@@ -198,28 +198,28 @@
                   <tbody>
                   <tr>
                     <td>Serum Total Protien</td>
-                    <td> <md-slider-container> <span>Result</span>      <md-slider flex min="6.0" step="0.1" max="8.2" ng-model="vm.formWizard.serumtoalprotein" aria-label="serumtoalprotein" id="serumtoalprotein" md-discrete></md-slider></md-slider-container>
+                    <td> <md-slider-container> <span>{{ vm.formWizard.serumtoalprotein }}</span>      <md-slider flex min="6.0" step="0.1" max="8.2" ng-model="vm.formWizard.serumtoalprotein" aria-label="serumtoalprotein" id="serumtoalprotein" md-discrete></md-slider></md-slider-container>
                     </td>
                     <td>(g/dl)</td>
                     <td>(6.0 - 8.2)</td>
                   </tr>
                   <tr>
                     <td>Serium Albumin</td>
-                    <td> <md-slider-container> <span>Result</span>      <md-slider flex min="3.5" step="0.1" max="5.2" ng-model="vm.formWizard.serumalbumin" aria-label="serumalbumin" id="serumalbumin" md-discrete></md-slider></md-slider-container>
+                    <td> <md-slider-container> <span>{{ vm.formWizard.serumalbumin }}</span>      <md-slider flex min="3.5" step="0.1" max="5.2" ng-model="vm.formWizard.serumalbumin" aria-label="serumalbumin" id="serumalbumin" md-discrete></md-slider></md-slider-container>
                     </td>
                     <td>(g/dl)</td>
                     <td>(3.5 - 5.2)</td>
                   </tr>
                   <tr>
                     <td>Serium Globulin</td>
-                    <td> <md-slider-container> <span>Result</span>      <md-slider flex min="1.8" step="0.1" max="3.4" ng-model="vm.formWizard.seriumglobin" aria-label="seriumglobin" id="seriumglobin" md-discrete></md-slider></md-slider-container>
+                    <td> <md-slider-container> <span>{{ vm.formWizard.seriumglobin }}</span>      <md-slider flex min="1.8" step="0.1" max="3.4" ng-model="vm.formWizard.seriumglobin" aria-label="seriumglobin" id="seriumglobin" md-discrete></md-slider></md-slider-container>
                     </td>
                     <td>(g/dl)</td>
                     <td>(1.8 - 3.4)</td>
                   </tr>
                   <tr>
                     <td>AG Ratio</td>
-                    <td> <md-slider-container> <span>Result</span>      <md-slider flex min="1.1" step="0.1" max="1.8" ng-model="vm.formWizard.agratio" aria-label="red" id="agratio" md-discrete></md-slider></md-slider-container>
+                    <td> <md-slider-container> <span>{{ vm.formWizard.agratio }}</span>      <md-slider flex min="1.1" step="0.1" max="1.8" ng-model="vm.formWizard.agratio" aria-label="red" id="agratio" md-discrete></md-slider></md-slider-container>
                     </td>
                     <td></td>
                     <td>(1.1 - 1.8)</td>
@@ -227,7 +227,7 @@
                   </tr>
                   <tr>
                     <td>GGT</td>
-                    <td> <md-slider-container> <span>Result</span>      <md-slider flex min="15" step="1" max="73" ng-model="vm.formWizard.ggt" aria-label="ggt" id="ggt" md-discrete></md-slider></md-slider-container>
+                    <td> <md-slider-container> <span>{{ vm.formWizard.ggt }}</span>      <md-slider flex min="15" step="1" max="73" ng-model="vm.formWizard.ggt" aria-label="ggt" id="ggt" md-discrete></md-slider></md-slider-container>
                     </td>
                     <td colspan="2">(U/L)</td>
                     <td>(15 - 73) Male <br> (12 - 43) Female</td>

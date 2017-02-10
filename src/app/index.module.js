@@ -33,6 +33,7 @@
       'app.rules',
       'app.profile',
       'app.reports',
+      'app.mail',
       'lfNgMdFileInput'
     ]);
 })();

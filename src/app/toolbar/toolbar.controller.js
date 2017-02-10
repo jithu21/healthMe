@@ -21,7 +21,7 @@
         vm.toggleSidenav = toggleSidenav;
         vm.logout = logout;
         vm.toggleHorizontalMobileMenu = toggleHorizontalMobileMenu;
-
+        vm.showMail =showMail;
         //////////
 
 
@@ -41,6 +41,10 @@
         function logout()
         {
           $location.path('/health/login')
+        }
+
+        function showMail() {
+          $location.path('/profile/mail')
         }
 
         /**

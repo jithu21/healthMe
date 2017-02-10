@@ -23,61 +23,76 @@
                 {
                     return {
                       "widget1": {
-                        "title": "Customer/Orders Dashboard ",
+                          "title": "Growth Chart",
                         "chart": [
                           {
-                            "key": "Total Orders",
+                            "key": "Height",
                             "values": [
-                              {"x": 1, "y": 10000},
-                              {"x": 2, "y": 12000},
-                              {"x": 3, "y": 10000},
-                              {"x": 4, "y": 9000},
-                              {"x": 5, "y": 11500},
-                              {"x": 6, "y": 12500},
-                              {"x": 7, "y": 13000},
-                              {"x": 8, "y": 10000},
-                              {"x": 9, "y": 12000},
-                              {"x": 10, "y": 7000}
+                              {"x": 0, "y": 51},
+                              {"x": 30, "y": 52},
+                              {"x": 60, "y": 53},
+                              {"x": 90, "y": 55},
+                              {"x": 120, "y": 56},
+                              {"x": 150, "y": 65},
+                              {"x":180, "y": 80},
+                              {"x": 210, "y": 85},
+                              {"x": 240, "y": 90},
+                              {"x": 270, "y": 91}
                             ]
                           },
                           {
-                            "key": "Total Customers",
+                            "key": "Weight",
                             "values": [
-                              {"x": 1, "y": 8000},
-                              {"x": 2, "y": 9000},
-                              {"x": 3, "y": 7000},
-                              {"x": 4, "y": 8500},
-                              {"x": 5, "y": 10000},
-                              {"x": 6, "y": 12000},
-                              {"x": 7, "y": 10000},
-                              {"x": 8, "y": 9000},
-                              {"x": 9, "y": 10000},
-                              {"x": 10, "y": 5000}
+                              {"x": 0, "y": 2.5},
+                              {"x": 30, "y": 2.8},
+                              {"x": 60, "y": 3},
+                              {"x": 90, "y": 3.2},
+                              {"x": 120, "y": 3.3},
+                              {"x": 150, "y": 4.5},
+                              {"x":180, "y": 4.5},
+                              {"x": 210, "y": 5},
+                              {"x": 240, "y": 5.2},
+                              {"x": 270, "y": 5.4}
+                            ]
+                          },
+                          {
+                            "key": "Head Circumference",
+                            "values": [
+                              {"x": 0, "y": 10},
+                              {"x": 30, "y": 12},
+                              {"x": 60, "y": 12},
+                              {"x": 90, "y": 12},
+                              {"x": 120, "y": 14},
+                              {"x": 150, "y": 15},
+                              {"x":180, "y": 15},
+                              {"x": 210, "y": 15},
+                              {"x": 240, "y": 16},
+                              {"x": 270, "y": 16}
                             ]
                           }
                         ]
                       },
                       "widget2": {
-                        "title": "Total Customers",
+                        "title": "Total Checkups",
                         "value": {
-                          "used": "0.15 Million",
+                          "used": "5 times",
                           "total": "",
                           "percentage": 67.45
                         },
                         "detail": "Total Number of Customers."
                       },
                       "widget3": {
-                        "title": "Total orders",
+                        "title": "Polio visits",
                         "value": {
-                          "used": "1.3 Million",
+                          "used": "2 times",
                           "total": "",
                           "percentage": 6.31
                         },
                         "detail": "Total Number of Orders."
                       },
                       "widget4": {
-                        "title": "Total Active Customers",
-                        "value": "0.04 Million",
+                        "title": "Total Insulin",
+                        "value": "3 times",
                         "footnote": "Higher than average",
                         "detail": "This is the back side. You can show detailed information here.",
                         "chart": [
@@ -90,8 +105,8 @@
                         ]
                       },
                       "widget5": {
-                        "title": "Total Inactive Customers",
-                        "value": "0.11 Million",
+                        "title": "Total Medicines",
+                        "value": "10",
                         "detail": "This is the back side. You can show detailed information here.",
                         "footnote": "Lower than average"
                       },
@@ -136,7 +151,7 @@
                         ]
                       },
                       "widget7": {
-                        "title": "Campaign",
+                        "title": "Social Network Feed",
                         "table": {
                           "columns": [
                             {
@@ -155,62 +170,59 @@
                           "rows": [
                             [
                               {
-                                "value": "Buy 1 Get 1",
+                                "value": "Increase weight",
                                 "classes": "text-bold"
                               },
                               {
                                 "value": "Karnataka",
                                 "classes": "text-boxed m-0 green-bg white-fg"
                               },
-                              {"value": "Italian"},
+                              {"value": "Growth"},
                               {"value": "Running"}
                             ],
                             [
                               {
-                                "value": "20% Flat",
-                                "classes": "text-bold"
-                              },
-                              {
-                                "value": "Gujarat",
-                                "classes": "text-boxed m-0 green-bg white-fg"
-                              },
-                              {"value": "North"},
-                              {"value": "Running"}
-                            ],
-                            [
-                              {
-                                "value": "Super Sunday",
-                                "classes": "text-bold"
-                              },
-                              {
-                                "value": "Bihar",
-                                "classes": "text-boxed m-0 green-bg white-fg"
-                              },
-                              {"value": "North"},
-                              {"value": "Completed"}
-                            ],
-                            [
-                              {
-                                "value": "Wednesday Dhamaka",
+                                "value": "Increase Height",
                                 "classes": "text-bold"
                               },
                               {
                                 "value": "Andhra",
                                 "classes": "text-boxed m-0 green-bg white-fg"
                               },
-                              {"value": "South"},
-                              {"value": "Completed"}
-                            ],
-                            [
+                              {"value": "Growth"},
+                              {"value": "Running"}
+                            ], [
                               {
-                                "value": "Diwali",
+                                "value": "Increase Metabolism",
                                 "classes": "text-bold"
                               },
                               {
-                                "value": "ALL",
+                                "value": "Telangana",
                                 "classes": "text-boxed m-0 green-bg white-fg"
                               },
-                              {"value": "North"},
+                              {"value": "Growth"},
+                              {"value": "Running"}
+                            ], [
+                              {
+                                "value": "Increase weight",
+                                "classes": "text-bold"
+                              },
+                              {
+                                "value": "Karnataka",
+                                "classes": "text-boxed m-0 green-bg white-fg"
+                              },
+                              {"value": "Growth"},
+                              {"value": "Running"}
+                            ], [
+                              {
+                                "value": "Increase weight",
+                                "classes": "text-bold"
+                              },
+                              {
+                                "value": "Karnataka",
+                                "classes": "text-boxed m-0 green-bg white-fg"
+                              },
+                              {"value": "Growth"},
                               {"value": "Running"}
                             ],
                             [
@@ -232,32 +244,32 @@
                         "title": "Activity",
                         "activities": [
                           {
-                            "process" : "Orders in Karnantaka",
+                            "process" : "Check up at Narayana Hospital",
                             "type": "Output",
-                            "value": "100 %"
+                            "value": "5%"
                           },
                           {
-                            "process" : "Orders in Andhra Pradesh",
-                            "type": "Input",
-                            "value": "10 %"
+                            "process" : "Check up at Polio clinic",
+                            "type": "Output",
+                            "value": "2%"
                           },
                           {
-                            "process" : "Orders in Punjab",
-                            "type": "Input",
+                            "process" : "Check up at clinic",
+                            "type": "Output",
                             "value": "5 %"
                           },
                           {
-                            "process" : "Orders in Gujarat",
+                            "process" : "Check up at KIMS",
                             "type": "Output",
-                            "value": "100 %"
+                            "value": "3%"
                           },
                           {
-                            "process" : "Orders in Kerala",
+                            "process" : "Check up at APOLLO",
                             "type": "Output",
-                            "value": "40 %"
+                            "value": "4 %"
                           },
                           {
-                            "process" : "Orders in Madhya Pradesh",
+                            "process" : "Check up at Vasan",
                             "type": "Output",
                             "value": "30 %"
                           }

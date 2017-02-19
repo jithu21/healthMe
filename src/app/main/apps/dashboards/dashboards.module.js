@@ -32,6 +32,11 @@
             state: 'app.dashboards_server'
         });
 
+      msNavigationServiceProvider.saveItem('apps.dashboards.project', {
+        title: 'Vaccination Schedule',
+        state: 'app.dashboards_project'
+      });
+
     }
 
 })();

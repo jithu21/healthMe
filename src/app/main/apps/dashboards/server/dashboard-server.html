@@ -2,49 +2,114 @@
 
     <!-- WIDGETS -->
     <div id="widgets">
+      <div ng-if="petname == 'jithu'">
+      <div class="widget-group" layout="row" flex="100" layout-wrap>
 
-        <!-- WIDGET GROUP -->
-        <div class="widget-group" layout="row" flex="100" layout-wrap>
+        <!-- WIDGET 5 -->
+        <ms-widget class="h-140" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
 
-            <!-- WIDGET 1 -->
-            <ms-widget flippable="false" layout="row" flex="100">
-                <!-- Front -->
-                <ms-widget-front class="p-16 white-bg">
-                    <div class="pb-16" layout="row" layout-align="space-between center">
-                        <!--<div class="h3">{{vm.widget1.title}}</div>-->
+          <!-- Front -->
+          <ms-widget-front class="p-16 white-bg" layout="row" flex>
+            <div class="pt-8 pb-8" layout="column" layout-align="center center" flex>
+              <div class="md-display-1 pb-8">70</div>
+              <div class="font-weight-500 secondary-text">Weight</div>
+            </div>
+          </ms-widget-front>
+          <!-- / Front -->
 
-                        <!--<md-menu>-->
-                            <!--<md-button aria-label="more" class="md-icon-button"-->
-                                       <!--ng-click="$mdOpenMenu($event)">-->
-                                <!--<md-icon md-font-icon="icon-dots-vertical"></md-icon>-->
-                            <!--</md-button>-->
-                            <!--<md-menu-content width="2">-->
-                                <!--<md-menu-item>-->
-                                    <!--<md-button ng-click="refreshWidget()" aria-label="Refresh widget">-->
-                                        <!--Refresh-->
-                                    <!--</md-button>-->
-                                <!--</md-menu-item>-->
-                            <!--</md-menu-content>-->
-                        <!--</md-menu>-->
-                      <img style="margin-left: 50px" ng-src="assets/images/growthchart.jpg">
-                    </div>
+        </ms-widget>
+        <!-- / WIDGET 5 -->
 
-                    <div>
+        <!-- WIDGET 6 -->
+        <ms-widget class="h-140" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+
+          <!-- Front -->
+          <ms-widget-front class="p-16 white-bg" layout="row" flex>
+            <div class="pt-8 pb-8" layout="column" layout-align="center center" flex>
+              <div class="font-weight-500 secondary-text pb-8">Height</div>
+              <div class="md-display-1">165cm</div>
+            </div>
+          </ms-widget-front>
+          <!-- / Front -->
+
+        </ms-widget>
+        <!-- / WIDGET 6 -->
+
+        <!-- WIDGET 7 -->
+        <ms-widget class="h-140" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+
+          <!-- Front -->
+          <ms-widget-front class="p-16 white-bg" layout="row" flex>
+            <div class="pt-8 pb-8" layout="row" layout-align="space-between center" flex>
+              <div class="pl-8" layout="column" layout-align="center start">
+                <span class="md-display-1 pb-8">No</span>
+                <span class="font-weight-500 secondary-text">Smokes</span>
+              </div>
+
+              <div>
+                <md-icon md-font-icon="icon-thumb-up" class="s48 hint-text"></md-icon>
+              </div>
+            </div>
+          </ms-widget-front>
+          <!-- / Front -->
+
+        </ms-widget>
+        <!-- / WIDGET 7 -->
+
+        <!-- WIDGET 8 -->
+        <ms-widget class="h-140" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+
+          <!-- Front -->
+          <ms-widget-front class="p-16 white-bg" layout="row" flex>
+            <div class="pt-8 pb-8" layout="row" layout-align="space-between center" flex>
+              <div>
+                <md-icon md-font-icon="icon-lock-unlocked" class="s48 hint-text"></md-icon>
+              </div>
+
+              <div class="pr-8" layout="column" layout-align="center end">
+                <div class="md-display-1 pb-8">O+ve</div>
+                <div class="font-weight-500 secondary-text">Blood Group</div>
+              </div>
+            </div>
+          </ms-widget-front>
+          <!-- / Front -->
+
+        </ms-widget>
+        <!-- / WIDGET 8 -->
+
+      </div>
+      </div>
+      <div ng-if="petname == 'suhasini'">
+         Weight : 3 kg
+        <img style="margin-left: 50px" ng-src="assets/images/growthchart.jpg">
+      </div>
 
 
-                    </div>
+      <div ng-if="petname == 'jithu'">
 
-                </ms-widget-front>
-                <!-- / Front -->
-
-            </ms-widget>
-            <!-- / WIDGET 1 -->
-
+        <div class="md-title">Line Area Chart age 50</div>
+        <div class="card md-whiteframe-4dp">
+          <c3chart bindto-id="line-area-chart">
+            <chart-column column-id="data 1"
+                          column-name="Data 1"
+                          column-color="red"
+                          column-values="30,200,100,400,150,250"
+                          column-type="area"/>
+            <chart-column column-id="data 2"
+                          column-name="Data 2"
+                          column-color="green"
+                          column-values="50,20,10,40,15,25"
+                          column-type="area"/>
+            <chart-grid show-x="false" show-y="true">
+            </chart-grid>
+          </c3chart>
         </div>
-        <!-- / WIDGET GROUP -->
 
 
-        <!-- WIDGET GROUP -->
+      </div>
+
+
+
         <div class="widget-group" layout="row" flex="100" layout-wrap>
 
             <!-- WIDGET 2 -->
@@ -172,7 +237,7 @@
                         </md-menu>
                     </div>
 
-                    <div class="pb-8 h1">5 times</div>
+                    <div class="pb-8 h1">10  times</div>
 
                 </ms-widget-front>
                 <!-- / Front -->
@@ -264,8 +329,8 @@
 
                     <div class="ph-16 pv-24 border-bottom" layout="row" layout-align="space-between center">
                         <div layout="row" layout-align="start center">
-                            <span class="h3">{{vm.widget7.title}}</span>
-                            <span class="ml-16 text-boxed pink-bg white-fg">4 Active Campaigns</span>
+                            <span class="h1">{{vm.widget7.title}}</span>
+                            <span class="ml-16 text-boxed pink-bg white-fg">3 Active Campaigns</span>
                         </div>
 
                         <md-menu>
@@ -358,5 +423,7 @@
         <!-- / WIDGET GROUP -->
 
     </div>
+
+
 
 </div>

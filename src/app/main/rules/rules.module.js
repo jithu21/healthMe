@@ -19,11 +19,11 @@
             }
         });
 
-      msNavigationServiceProvider.saveItem('fuse.rules', {
-        title : 'Campaigns',
-        icon  : 'icon-filter',
-        state : 'app.rules'
-      });
+      // msNavigationServiceProvider.saveItem('fuse.rules', {
+      //   title : 'Campaigns',
+      //   icon  : 'icon-filter',
+      //   state : 'app.rules'
+      // });
     }
 
 })();

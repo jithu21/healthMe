@@ -24,7 +24,7 @@
                 }
             }
         });
-      msNavigationServiceProvider.saveItem('fuse.users', {
+      msNavigationServiceProvider.saveItem('fuse.prescription', {
         title : 'Prescriptions ',
         icon  : 'icon-account-multiple',
         state : 'app.prescription'

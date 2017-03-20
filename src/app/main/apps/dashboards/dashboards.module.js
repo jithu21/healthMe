@@ -1,42 +1,33 @@
 (function ()
 {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('app.dashboards', [
-            'app.dashboards.project',
-            'app.dashboards.server',
-            'app.dashboards.analytics'
-        ])
-        .config(config);
+  angular
+    .module('app.dashboards', [
+      'app.dashboards.project',
+      'app.dashboards.server',
+      'app.dashboards.analytics'
+    ])
+    .config(config);
 
-    /** @ngInject */
-    function config(msNavigationServiceProvider)
-    {
-        // Navigation
-        msNavigationServiceProvider.saveItem('apps', {
-            title : 'HEALTH DASHBOARD',
-            group : true,
-            weight: 1
-        });
+  /** @ngInject */
+  function config(msNavigationServiceProvider,$translatePartialLoaderProvider)
+  {
 
-        msNavigationServiceProvider.saveItem('apps.dashboards', {
-            title : 'Dashboards',
-            icon  : 'icon-tile-four',
-            weight: 1
-        });
+    msNavigationServiceProvider.saveItem('fuse', {
+      title : 'ANALYTICS',
+      group : true,
+      weight: 1
+    });
 
+    msNavigationServiceProvider.saveItem('fuse.server', {
+      title: 'Health Insights',
+      icon  : 'icon-chart-areaspline',
+      state: 'app.dashboards_project'
+    });
 
-        msNavigationServiceProvider.saveItem('apps.dashboards.server', {
-            title: 'Health Insights',
-            state: 'app.dashboards_server'
-        });
+    $translatePartialLoaderProvider.addPart('app/main/apps/dashboards/project/i18n');
 
-      msNavigationServiceProvider.saveItem('apps.dashboards.project', {
-        title: 'Vaccination Schedule',
-        state: 'app.dashboards_project'
-      });
-
-    }
+  }
 
 })();

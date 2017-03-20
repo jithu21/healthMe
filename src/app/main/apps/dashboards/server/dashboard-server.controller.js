@@ -7,11 +7,9 @@
         .controller('DashboardServerController', DashboardServerController);
 
     /** @ngInject */
-    function DashboardServerController($scope, $interval, DashboardData, $http)
+    function DashboardServerController($scope, $interval, DashboardData, $http,$rootScope)
     {
         var vm = this;
-
-
 
       vm.customer_oprders= function(time,user_id,event, event_type, product_id, price, phrase, order_id) {
         $http({
@@ -87,6 +85,35 @@
 
         // Data
         vm.dashboardData = DashboardData;
+
+
+      // Now widget
+      vm.nowWidget = {
+        now   : {
+          second: '',
+          minute: '',
+          hour  : '',
+          day   : '',
+          month : '',
+          year  : ''
+        },
+        ticker: function ()
+        {
+          var now = moment();
+          vm.nowWidget.now = {
+            second : now.format('ss'),
+            minute : now.format('mm'),
+            hour   : now.format('HH'),
+            day    : now.format('D'),
+            weekDay: now.format('dddd'),
+            month  : now.format('MMMM'),
+            year   : now.format('YYYY')
+          };
+        }
+      };
+
+      // Weather widget
+      vm.weatherWidget = vm.dashboardData.weatherWidget;
 
         // Widget 1
         vm.widget1 = {

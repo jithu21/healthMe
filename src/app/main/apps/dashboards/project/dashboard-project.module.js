@@ -38,13 +38,13 @@
                       ],
                       "widget1": {
                         "ranges": {
-                          "DY": "Yesterday",
-                          "DT": "Today",
-                          "DTM": "Tomorrow"
+                          "DY": "2 Months ago",
+                          "DT": "Current Month",
+                          "DTM": "1 Month ago"
                         },
                         "currentRange": "DT",
                         "data": {
-                          "label": "DUE TASKS",
+                          "label": "CHECKUPS",
                           "count": {
                             "DY": 21,
                             "DT": 25,
@@ -59,40 +59,40 @@
                             }
                           }
                         },
-                        "detail": "You can show some detailed information about this widget in here."
+                        "detail": "Next check up in on next monday"
                       },
                       "widget2": {
-                        "title": "Overdue",
+                        "title": "POLIO DROPS",
                         "data": {
-                          "label": "TASKS",
+                          "label": "VISITS",
                           "count": 4,
                           "extra": {
-                            "label": "Yesterday's overdue",
+                            "label": "Remaining Visits",
                             "count": 2
                           }
                         },
-                        "detail": "You can show some detailed information about this widget in here."
+                        "detail": "Next polio visit is on next sunday"
                       },
                       "widget3": {
-                        "title": "Issues",
+                        "title": "SLEEP TIME",
                         "data": {
-                          "label": "OPEN",
+                          "label": "SLEEP ANALYSIS",
                           "count": 32,
                           "extra": {
-                            "label": "Closed today",
-                            "count": 0
+                            "label": "Average Time",
+                            "count": "7hr"
                           }
                         },
                         "detail": "You can show some detailed information about this widget in here."
                       },
                       "widget4": {
-                        "title": "Features",
+                        "title": "MEDICINES",
                         "data": {
-                          "label": "PROPOSALS",
-                          "count": 42,
+                          "label": "PRESCIBED",
+                          "count": 7,
                           "extra": {
-                            "label": "Implemented",
-                            "count": 8
+                            "label": "Per day medicine",
+                            "count": 5
                           }
                         },
                         "detail": "You can show some detailed information about this widget in here."
@@ -471,7 +471,7 @@
                           }
                         }
                       },
-                      "widget7": {
+                      "widget71": {
                         "title": "Schedule",
                         "ranges": {
                           "T": "Today",
@@ -541,7 +541,7 @@
                           ]
                         }
                       },
-                      "widget8": {
+                      "widget81": {
                         "title": "Budget Distribution",
                         "mainChart": [
                           {
@@ -703,187 +703,131 @@
                         }
                       },
                       "widget10": {
-                        "title": "Budget Details",
+                        "title": "Next Vaccinations",
                         "table": {
                           "columns": [
                             {
-                              "title": "Budget Type"
+                              "title": "Vaccination Name"
                             },
                             {
-                              "title": "Total Budget"
+                              "title": "Recommend Age"
                             },
                             {
-                              "title": "Spent ($)"
+                              "title": "Next Available Date"
                             },
                             {
-                              "title": "Spent (%)"
-                            },
-                            {
-                              "title": "Remaining ($)"
-                            },
-                            {
-                              "title": "Remaining (%)"
+                              "title": "Use of Vaccine"
                             }
                           ],
                           "rows": [
                             [
                               {
-                                "value": "Wireframing",
+                                "value": "DTwP3/DTaP3",
                                 "classes": "text-boxed m-0 deep-orange-bg white-fg",
                                 "icon": ""
                               },
                               {
-                                "value": "$14,880.00",
+                                "value": "14 weeks",
                                 "classes": "text-bold",
                                 "icon": ""
                               },
                               {
-                                "value": "$14,000.00",
+                                "value": "21st April",
                                 "classes": "",
                                 "icon": ""
                               },
                               {
-                                "value": "%94.08",
+                                "value": "Increase Hemoglobin",
                                 "classes": "red-fg",
                                 "icon": "icon icon-trending-up s14 red-fg"
-                              },
-                              {
-                                "value": "$880.00",
-                                "classes": "",
-                                "icon": ""
-                              },
-                              {
-                                "value": "%5.92",
-                                "classes": "",
-                                "icon": ""
                               }
                             ],
                             [
                               {
-                                "value": "Design",
+                                "value": "HEP-B3",
                                 "classes": "text-boxed m-0 purple-bg white-fg",
                                 "icon": ""
                               },
                               {
-                                "value": "$21,080.00",
+                                "value": "6 months",
                                 "classes": "text-bold",
                                 "icon": ""
                               },
                               {
-                                "value": "$17,240.34",
+                                "value": "21st May",
                                 "classes": "",
                                 "icon": ""
                               },
                               {
-                                "value": "%81.78",
+                                "value": "Increases the Immunity",
                                 "classes": "red-fg",
                                 "icon": "icon icon-trending-up s14 red-fg"
-                              },
-                              {
-                                "value": "$3,839.66",
-                                "classes": "",
-                                "icon": ""
-                              },
-                              {
-                                "value": "%18.22",
-                                "classes": "",
-                                "icon": ""
                               }
                             ],
                             [
                               {
-                                "value": "Coding",
+                                "value": "MEASLES",
                                 "classes": "text-boxed m-0 light-blue-bg white-fg",
                                 "icon": ""
                               },
                               {
-                                "value": "$34,720.00",
+                                "value": "9 months",
                                 "classes": "text-bold",
                                 "icon": ""
                               },
                               {
-                                "value": "$3,518.00",
+                                "value": "21st July",
                                 "classes": "",
                                 "icon": ""
                               },
                               {
-                                "value": "%10.13",
+                                "value": "Increases Resistance",
                                 "classes": "green-fg",
                                 "icon": "icon icon-trending-down s14 green-fg"
-                              },
-                              {
-                                "value": "$31,202.00",
-                                "classes": "",
-                                "icon": ""
-                              },
-                              {
-                                "value": "%89.87",
-                                "classes": "",
-                                "icon": ""
                               }
                             ],
                             [
                               {
-                                "value": "Marketing",
+                                "value": "HEP-A1/HEP-A2/MMR",
                                 "classes": "text-boxed m-0 pink-bg white-fg",
                                 "icon": ""
                               },
                               {
-                                "value": "$34,720.00",
+                                "value": "12 months",
                                 "classes": "text-bold",
                                 "icon": ""
                               },
                               {
-                                "value": "$0.00",
+                                "value": "21st September",
                                 "classes": "",
                                 "icon": ""
                               },
                               {
-                                "value": "%0.00",
+                                "value": "Reduces Infections",
                                 "classes": "green-fg",
                                 "icon": "icon icon-minus s14 green-fg"
-                              },
-                              {
-                                "value": "$34,720.00",
-                                "classes": "",
-                                "icon": ""
-                              },
-                              {
-                                "value": "%100.00",
-                                "classes": "",
-                                "icon": ""
                               }
                             ],
                             [
                               {
-                                "value": "Extra",
+                                "value": "THYPOID 1",
                                 "classes": "text-boxed m-0 amber-bg white-fg",
                                 "icon": ""
                               },
                               {
-                                "value": "$18,600.00",
+                                "value": "5 YEARS",
                                 "classes": "text-bold",
                                 "icon": ""
                               },
                               {
-                                "value": "$0.00",
+                                "value": "30th December",
                                 "classes": "",
                                 "icon": ""
                               },
                               {
-                                "value": "%0.00",
+                                "value": "Increases Immunity for Thyroid",
                                 "classes": "green-fg",
                                 "icon": "icon icon-minus s14 green-fg"
-                              },
-                              {
-                                "value": "$34,720.00",
-                                "classes": "",
-                                "icon": ""
-                              },
-                              {
-                                "value": "%100.00",
-                                "classes": "",
-                                "icon": ""
                               }
                             ]
                           ]
@@ -1093,26 +1037,26 @@
                             "rainProbability": "98%",
                             "next3Days": [
                               {
-                                "name": "Sunday",
+                                "name": "Height",
                                 "icon": "icon-weather-pouring",
                                 "temp": {
-                                  "C": "21",
+                                  "C": "170 cm",
                                   "F": "70"
                                 }
                               },
                               {
-                                "name": "Sunday",
+                                "name": "Weight",
                                 "icon": "icon-weather-pouring",
                                 "temp": {
-                                  "C": "19",
+                                  "C": "60 kg",
                                   "F": "66"
                                 }
                               },
                               {
-                                "name": "Tuesday",
+                                "name": "Blood Group",
                                 "icon": "icon-weather-partlycloudy",
                                 "temp": {
-                                  "C": "24",
+                                  "C": "O +ve",
                                   "F": "75"
                                 }
                               }
@@ -1122,6 +1066,131 @@
                         "currentLocation": "NewYork",
                         "tempUnit": "C",
                         "speedUnit": "KMH"
+                      },
+                      "widget7": {
+                        "title": "Social Network Feed",
+                        "table": {
+                          "columns": [
+                            {
+                              "title": "Campaign Name"
+                            },
+                            {
+                              "title": "Location"
+                            },
+                            {
+                              "title": "Category"
+                            },
+                            {
+                              "title": "Status"
+                            }
+                          ],
+                          "rows": [
+                            [
+                              {
+                                "value": "Increase weight",
+                                "classes": "text-bold"
+                              },
+                              {
+                                "value": "Karnataka",
+                                "classes": "text-boxed m-0 green-bg white-fg"
+                              },
+                              {"value": "Growth"},
+                              {"value": "Running"}
+                            ],
+                            [
+                              {
+                                "value": "Increase Height",
+                                "classes": "text-bold"
+                              },
+                              {
+                                "value": "Andhra",
+                                "classes": "text-boxed m-0 green-bg white-fg"
+                              },
+                              {"value": "Growth"},
+                              {"value": "Running"}
+                            ], [
+                              {
+                                "value": "Increase Metabolism",
+                                "classes": "text-bold"
+                              },
+                              {
+                                "value": "Telangana",
+                                "classes": "text-boxed m-0 green-bg white-fg"
+                              },
+                              {"value": "Growth"},
+                              {"value": "Running"}
+                            ], [
+                              {
+                                "value": "Increase weight",
+                                "classes": "text-bold"
+                              },
+                              {
+                                "value": "Karnataka",
+                                "classes": "text-boxed m-0 green-bg white-fg"
+                              },
+                              {"value": "Growth"},
+                              {"value": "Running"}
+                            ], [
+                              {
+                                "value": "Increase weight",
+                                "classes": "text-bold"
+                              },
+                              {
+                                "value": "Karnataka",
+                                "classes": "text-boxed m-0 green-bg white-fg"
+                              },
+                              {"value": "Growth"},
+                              {"value": "Running"}
+                            ],
+                            [
+                              {
+                                "value": "Valentines Day",
+                                "classes": "text-bold"
+                              },
+                              {
+                                "value": "ALL",
+                                "classes": "text-boxed m-0 deep-orange-bg white-fg"
+                              },
+                              {"value": "South"},
+                              {"value": "Running"}
+                            ]
+                          ]
+                        }
+                      },
+                      "widget8": {
+                        "title": "Activity",
+                        "activities": [
+                          {
+                            "process" : "Check up at Narayana Hospital",
+                            "type": "Output",
+                            "value": "5%"
+                          },
+                          {
+                            "process" : "Check up at Polio clinic",
+                            "type": "Output",
+                            "value": "2%"
+                          },
+                          {
+                            "process" : "Check up at clinic",
+                            "type": "Output",
+                            "value": "5 %"
+                          },
+                          {
+                            "process" : "Check up at KIMS",
+                            "type": "Output",
+                            "value": "3%"
+                          },
+                          {
+                            "process" : "Check up at APOLLO",
+                            "type": "Output",
+                            "value": "4 %"
+                          },
+                          {
+                            "process" : "Check up at Vasan",
+                            "type": "Output",
+                            "value": "30 %"
+                          }
+                        ]
                       }
                     };
                 }

@@ -31,10 +31,10 @@
         $translatePartialLoaderProvider.addPart('app/main/sample');
 
         // Navigation
-        msNavigationServiceProvider.saveItem('fuse', {
-            title : 'ANALYTICS',
-            group : true,
-            weight: 1
-        });
+        // msNavigationServiceProvider.saveItem('fuse', {
+        //     title : 'ANALYTICS',
+        //     group : true,
+        //     weight: 1
+        // });
     }
 })();

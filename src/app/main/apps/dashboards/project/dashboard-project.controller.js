@@ -4,11 +4,134 @@
 
     angular
         .module('app.dashboards.project')
-        .controller('DashboardProjectController', DashboardProjectController);
+        .controller('DashboardProjectController', DashboardProjectController)
+
+      .controller('EventFormDialogController', EventFormDialogController);
+
+  /** @ngInject */
+  function EventFormDialogController($mdDialog, dialogData)
+  {
+    var vm = this;
+
+    // Data
+    vm.dialogData = dialogData;
+    vm.notifications = ['15 minutes before', '30 minutes before', '1 hour before'];
+
+    // Methods
+    vm.saveEvent = saveEvent;
+    vm.removeEvent = removeEvent;
+    vm.closeDialog = closeDialog;
+
+    init();
+
+    //////////
+
+    /**
+     * Initialize
+     */
+    function init()
+    {
+      // Figure out the title
+      switch ( vm.dialogData.type )
+      {
+        case 'add' :
+          vm.dialogTitle = 'Vaccination';
+          break;
+
+        case 'edit' :
+          vm.dialogTitle = 'Vaccination';
+          break;
+
+        default:
+          break;
+      }
+
+      // Edit
+      if ( vm.dialogData.calendarEvent )
+      {
+        // Clone the calendarEvent object before doing anything
+        // to make sure we are not going to brake FullCalendar
+        vm.calendarEvent = angular.copy(vm.dialogData.calendarEvent);
+
+        // Convert moment.js dates to javascript date object
+        if ( moment.isMoment(vm.calendarEvent.start) )
+        {
+          vm.calendarEvent.start = vm.calendarEvent.start.toDate();
+        }
+
+        if ( moment.isMoment(vm.calendarEvent.end) )
+        {
+          vm.calendarEvent.end = vm.calendarEvent.end.toDate();
+        }
+      }
+      // Add
+      else
+      {
+        // Convert moment.js dates to javascript date object
+        if ( moment.isMoment(vm.dialogData.start) )
+        {
+          vm.dialogData.start = vm.dialogData.start.toDate();
+        }
+
+        if ( moment.isMoment(vm.dialogData.end) )
+        {
+          vm.dialogData.end = vm.dialogData.end.toDate();
+        }
+
+        vm.calendarEvent = {
+          start        : vm.dialogData.start,
+          end          : vm.dialogData.end,
+          notifications: []
+        };
+      }
+    }
+
+    /**
+     * Save the event
+     */
+    function saveEvent()
+    {
+      // Convert the javascript date objects back to the moment.js dates
+      var dates = {
+        start: moment.utc(vm.calendarEvent.start),
+        end  : moment.utc(vm.calendarEvent.end)
+      };
+
+      var response = {
+        type         : vm.dialogData.type,
+        calendarEvent: angular.extend({}, vm.calendarEvent, dates)
+      };
+
+      $mdDialog.hide(response);
+    }
+
+    /**
+     * Remove the event
+     */
+    function removeEvent()
+    {
+      var response = {
+        type         : 'remove',
+        calendarEvent: vm.calendarEvent
+      };
+
+      $mdDialog.hide(response);
+    }
+
+    /**
+     * Close the dialog
+     */
+    function closeDialog()
+    {
+      $mdDialog.cancel();
+    }
+  }
 
     /** @ngInject */
-    function DashboardProjectController($scope, $interval, $mdSidenav, DashboardData)
+    function DashboardProjectController($scope, $interval, $mdSidenav, DashboardData, $rootScope,$mdDialog,$document)
     {
+
+      $rootScope.petname ="suhasini";
         var vm = this;
 
         // Data
@@ -557,6 +680,60 @@
         {
             vm.selectedProject = project;
         }
+      vm.addEvent = addEvent;
+      vm.showEventDetailDialog=showEventDetailDialog;
+      function addEvent(e)
+      {
+        var start = new Date(),
+          end = new Date();
+
+        showEventFormDialog('add', false, start, end, e);
+      }
+
+      /**
+       * Show event detail dialog
+       * @param calendarEvent
+       * @param e
+       */
+      function showEventDetailDialog(calendarEvent, e)
+      {
+        $mdDialog.show({
+          controller         : 'EventDetailDialogController',
+          controllerAs       : 'vm',
+          templateUrl        : 'app/main/apps/event-form/event-form-dialog.html',
+          parent             : angular.element($document.body),
+          targetEvent        : e,
+          clickOutsideToClose: true,
+          locals             : {
+            calendarEvent      : calendarEvent,
+            showEventFormDialog: showEventFormDialog,
+            event              : e
+          }
+        });
+      }
+
+
+      function showEventFormDialog(type, calendarEvent, start, end, e)
+      {
+        var dialogData = {
+          type         : type,
+          calendarEvent: calendarEvent,
+          start        : start,
+          end          : end
+        };
+
+        $mdDialog.show({
+          controller         : 'EventFormDialogController',
+          controllerAs       : 'vm',
+          templateUrl        : 'app/main/apps/event-form/event-form-dialog.html',
+          parent             : angular.element($document.body),
+          targetEvent        : e,
+          clickOutsideToClose: true,
+          locals             : {
+            dialogData: dialogData
+          }
+        })
+      }
     }
 
 })();
